@@ -276,7 +276,7 @@ Error generating stack: `+o.message+`
   font-size: 45px;
   width: 60px;
   left: 50px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px 0 120px;
   top: 48%;
   height: 60px;
   color: ${e=>e.textColor};
