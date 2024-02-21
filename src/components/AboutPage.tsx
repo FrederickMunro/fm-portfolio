@@ -31,13 +31,13 @@ const AboutPage = ({ textColor }: AboutProps) => {
           <H4 textColor={textColor}>Get to know me!</H4>
           <SkillsContainer>
             <Text textColor={textColor}>
-              As a Full Stack Web Developer, I thrive on continual learning and growth in the ever-evolving field of technology. With 
-              a strong foundation from Concordia University, I'm adept at both frontend and backend development, constantly seeking 
-              out new techniques and technologies to enhance my skills.
+              As a Full Stack Web Developer, I am dedicated to continuous learning and development within the dynamic realm of 
+              technology. Equipped with a Bachelor's Degree in Software Engineering from Concordia University, I possess 
+              proficiency in both frontend and backend development, actively pursuing new methods and tools to expand my expertise.
             </Text>
             <Text textColor={textColor}>
-            Passionate about staying abreast of the latest advancements, I approach every project with a curiosity-driven mindset, 
-            eager to explore innovative solutions.
+              Driven by a deep passion for staying at the forefront of technological advancements, I approach each project 
+              with a curious outlook, always eager to discover and implement innovative solutions.
             </Text>
           </SkillsContainer>
         </LeftContainer>

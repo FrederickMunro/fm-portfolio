@@ -101,12 +101,14 @@ const ScrollBarStyles = css`
 const Container = styled.div`
   min-height: 0;
   height: calc(80vh - 120px);
+  margin-left: 60px;
   display: flex;
   align-items: center;
 `
 
 const ButtonContainer = styled.div`
   width: 100px;
+  text-align: center;
 `;
 
 const VisibleContainer = styled.div`
@@ -148,9 +150,6 @@ const LeftButton = styled.button<ArrowButton>`
   font-weight: bold;
   font-size: 45px;
   width: 60px;
-  left: 50px;
-  margin: 0 20px 0 20px;
-  top: 48%;
   height: 60px;
   color: ${props => props.textColor};
   display: ${props => props.page === 0 ? 'none' : 'visible'};
@@ -163,9 +162,6 @@ const RightButton = styled.button<ArrowButton>`
   font-weight: bold;
   font-size: 45px;
   width: 60px;
-  right: 50px;
-  margin: 0 20px 0 20px;
-  top: 48%;
   height: 60px;
   color: ${props => props.textColor};
   display: ${props => props.page === 3 ? 'none' : 'visible'};

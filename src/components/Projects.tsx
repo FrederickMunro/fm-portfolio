@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+import Project from './Project';
+
+import Space from "../assets/space.png";
+
 interface ProjectsProps {
   textColor: string;
 }
@@ -9,6 +13,7 @@ const Projects = ({ textColor }: ProjectsProps) => {
   return(
     <>
       <H1 textColor={textColor}>Projects</H1>
+      <Project image={Space}></Project>
     </>
   );
 };
