@@ -42,7 +42,7 @@ Error generating stack: `+o.message+`
   position: fixed;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
