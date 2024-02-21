@@ -306,7 +306,6 @@ Error generating stack: `+o.message+`
   overflow-x: hidden;
   height: calc(80vh - 120px);
   margin: auto;
-  flex-wrap: wrap;
 `,Qf=j.button`
   font-weight: bold;
   font-size: 45px;
