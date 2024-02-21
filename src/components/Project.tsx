@@ -1,19 +1,21 @@
 import styled from "styled-components";
 
 interface ProjectProps {
+  name: string;
+  description: string;
   image: string;
+  href: string;
 }
 
-const Project = ({ image }:ProjectProps) => {
+const Project = ({ name, description, image, href }:ProjectProps) => {
+  
   return(
     <Container>
-      <A href='https://frederickmunro.github.io/space/' target='_blank'>
+      <A href={href} target='_blank'>
         <Img src={image} />
         <TextBox>
-          <H2>Space project</H2>
-          <P>
-            Short description of project.
-          </P>
+          <H2>{name}</H2>
+          <P>{description}</P>
         </TextBox>
       </A>
     </Container>
@@ -24,7 +26,7 @@ export default Project;
 
 const Container = styled.div`
   height: 250px;
-  width: 70%;
+  width: 50%;
 `
 
 const Img = styled.img`

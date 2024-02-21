@@ -69,34 +69,42 @@ const Content = ({ textColor, page, handlePageLeft, handlePageRight }: ContentPr
 export default Content;
 
 const ScrollBarStyles = css`
-  scrollbar-color: #000 #0000;
-
-  /* Track */
+  /* WebKit Browsers (Chrome, Safari) */
+  scrollbar-color: #000 #0000; /* Adjust scrollbar thumb and track colors */
   ::-webkit-scrollbar {
-    width: 20px; /* width of the scrollbar */
+    width: 10px; /* Adjust width of the scrollbar */
   }
-
-  /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #000; /* color of the scrollbar handle */
-    border-radius: 6px; /* roundness of the scrollbar handle */
+    background: #000; /* Adjust color of the scrollbar handle */
+    border-radius: 6px; /* Adjust roundness of the scrollbar handle */
   }
-
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #fff; /* color of the scrollbar handle on hover */
+    background: #fff; /* Adjust color of the scrollbar handle on hover */
   }
-
-  /* Track */
   ::-webkit-scrollbar-track {
-    background: #0000; /* color of the scrollbar track */
+    background: #0000; /* Adjust color of the scrollbar track */
   }
 
-  /* Track on hover */
-  ::-webkit-scrollbar-track:hover {
-    background: #0000; /* color of the scrollbar track on hover */
+  /* Firefox */
+  scrollbar-color: #000 #0000; /* Adjust scrollbar thumb and track colors */
+  scrollbar-width: thin; /* Adjust width of the scrollbar */
+  * {
+    scrollbar-width: thin; /* Adjust width of the scrollbar for elements with overflow */
   }
-`
+  *:hover {
+    scrollbar-width: thin; /* Adjust width of the scrollbar on hover */
+  }
+  *::-moz-scrollbar-thumb {
+    background: #000; /* Adjust color of the scrollbar handle */
+    border-radius: 6px; /* Adjust roundness of the scrollbar handle */
+  }
+  *::-moz-scrollbar-thumb:hover {
+    background: #fff; /* Adjust color of the scrollbar handle on hover */
+  }
+  *::-moz-scrollbar-track {
+    background: #0000; /* Adjust color of the scrollbar track */
+  }
+`;
 
 const Container = styled.div`
   min-height: 0;
@@ -142,6 +150,7 @@ const TextBox = styled.div<Color>`
   color: ${props => props.textColor};
   min-width: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   height: calc(80vh - 120px);
   margin: auto;
 `;

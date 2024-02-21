@@ -10,10 +10,26 @@ interface ProjectsProps {
 
 const Projects = ({ textColor }: ProjectsProps) => {
 
+  const projects = [
+    { name: 'Planetary Exploration: Terrestrial Planets', description:'Description', image: Space, href: 'https://frederickmunro.github.io/space/' }
+  ]
+
   return(
     <>
       <H1 textColor={textColor}>Projects</H1>
-      <Project image={Space}></Project>
+      {
+        projects.map((e, i) => {
+          return(
+            <Project
+              name={e.name}
+              description={e.description}
+              image={e.image}
+              href={e.href}
+              key={i}
+            />
+          )
+        })
+      }
     </>
   );
 };
