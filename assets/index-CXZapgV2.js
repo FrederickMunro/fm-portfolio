@@ -238,10 +238,12 @@ Error generating stack: `+o.message+`
 `,jf=R.div`
   min-height: 0;
   height: calc(80vh - 120px);
+  margin-left: 60px;
   display: flex;
   align-items: center;
 `,Ms=R.div`
   width: 100px;
+  text-align: center;
 `,Rf=R.div`
   display: flex;
   justify-content: center;
@@ -275,9 +277,6 @@ Error generating stack: `+o.message+`
   font-weight: bold;
   font-size: 45px;
   width: 60px;
-  left: 50px;
-  margin: 0 20px 0 70px;
-  top: 48%;
   height: 60px;
   color: ${e=>e.textColor};
   display: ${e=>e.page===0?"none":"visible"};
@@ -288,9 +287,6 @@ Error generating stack: `+o.message+`
   font-weight: bold;
   font-size: 45px;
   width: 60px;
-  right: 50px;
-  margin: 0 20px 0 20px;
-  top: 48%;
   height: 60px;
   color: ${e=>e.textColor};
   display: ${e=>e.page===3?"none":"visible"};
