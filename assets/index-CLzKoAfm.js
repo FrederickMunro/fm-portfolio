@@ -195,7 +195,8 @@ Error generating stack: `+o.message+`
   margin: 15px 0px 0px 0px;
 `,Mf=({name:e,description:t,image:n,href:r})=>E.jsx(Nf,{children:E.jsxs(jf,{href:r,target:"_blank",children:[E.jsx($f,{src:n}),E.jsxs(Rf,{children:[E.jsx(Lf,{children:e}),E.jsx(Tf,{children:t})]})]})}),Nf=j.div`
   height: 200px;
-  min-width: 40%;
+  min-width: 900px;
+  max-width: 40%;
   margin-top: 50px;
 `,$f=j.img`
   height: 100%;
