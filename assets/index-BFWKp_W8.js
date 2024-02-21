@@ -193,7 +193,7 @@ Error generating stack: `+o.message+`
   color: ${e=>e.textColor};
   font-size: 20px;
   margin: 15px 0px 0px 0px;
-`,Mf=({name:e,description:t,image:n,href:r})=>E.jsx(Nf,{children:E.jsxs(jf,{href:r,target:"_blank",children:[E.jsx($f,{src:n}),E.jsxs(Rf,{children:[E.jsx(Lf,{children:e}),E.jsx(Tf,{children:t})]})]})}),Nf=j.div`
+`,Mf=({name:e,description:t,image:n,href:r,textColor:l})=>E.jsx(Nf,{children:E.jsxs(jf,{href:r,target:"_blank",children:[E.jsx($f,{src:n}),E.jsxs(Rf,{textColor:l,children:[E.jsx(Lf,{children:e}),E.jsx(Tf,{children:t})]})]})}),Nf=j.div`
   height: 200px;
   min-width: 900px;
   max-width: 40%;
@@ -214,7 +214,8 @@ Error generating stack: `+o.message+`
   display: flex;
   flex-direction: column;
   margin-left: 50px;
-`,ei="/fm-portfolio/assets/space-BheS09_4.png",If=({textColor:e})=>{const t=[{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"",description:"",image:"",href:""}];return E.jsxs(E.Fragment,{children:[E.jsx(Df,{textColor:e,children:"Projects"}),E.jsx(Of,{children:t.map((n,r)=>E.jsx(Mf,{name:n.name,description:n.description,image:n.image,href:n.href},r))})]})},Of=j.div`
+  color: ${e=>e.textColor};
+`,ei="/fm-portfolio/assets/space-BheS09_4.png",If=({textColor:e})=>{const t=[{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"Planetary Exploration: Terrestrial Planets",description:"Description",image:ei,href:"https://frederickmunro.github.io/space/"},{name:"",description:"",image:"",href:""}];return E.jsxs(E.Fragment,{children:[E.jsx(Df,{textColor:e,children:"Projects"}),E.jsx(Of,{children:t.map((n,r)=>E.jsx(Mf,{name:n.name,description:n.description,image:n.image,href:n.href,textColor:e},r))})]})},Of=j.div`
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
