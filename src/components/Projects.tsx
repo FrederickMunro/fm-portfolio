@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Project from './Project';
 
 import Space from "../assets/space.png";
+import FlappyBird from "../assets/flappybird.png"
 
 interface ProjectsProps {
   textColor: string;
@@ -11,30 +12,63 @@ interface ProjectsProps {
 const Projects = ({ textColor }: ProjectsProps) => {
 
   const projects = [
-    { name: 'Planetary Exploration: Terrestrial Planets', description:'Description', image: Space, href: 'https://frederickmunro.github.io/space/' }
+    {
+      name: 'Planetary Exploration: Terrestrial Planets',
+      description:'Get to know your terrestrial planets here.',
+      image: Space,
+      href: 'https://frederickmunro.github.io/space/'
+    },
+    {
+      name: 'Flappy Bird Clone',
+      description:'A web-based clone of the classic Flappy Bird mobile game.',
+      image: FlappyBird,
+      href: 'https://frederickmunro.github.io/flappybird/'
+    },
+    {
+      name: 'Flappy Bird Clone',
+      description:'A web-based clone of the classic Flappy Bird mobile game.',
+      image: FlappyBird,
+      href: 'https://frederickmunro.github.io/flappybird/'
+    },
+    {
+      name: 'Planetary Exploration: Terrestrial Planets',
+      description:'Get to know your terrestrial planets here.',
+      image: Space,
+      href: 'https://frederickmunro.github.io/space/'
+    },
+    
   ]
 
   return(
     <>
       <H1 textColor={textColor}>Projects</H1>
-      {
-        projects.map((e, i) => {
-          return(
-            <Project
-              name={e.name}
-              description={e.description}
-              image={e.image}
-              href={e.href}
-              key={i}
-            />
-          )
-        })
-      }
+      <Container>
+        {
+          projects.map((e, i) => {
+            return(
+              <Project
+                name={e.name}
+                description={e.description}
+                image={e.image}
+                href={e.href}
+                textColor={textColor}
+                key={i}
+              />
+            )
+          })
+        }
+      </Container>
     </>
   );
 };
 
 export default Projects;
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+`
 
 const H1 = styled.h1<ProjectsProps>`
   margin: 0;
